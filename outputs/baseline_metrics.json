@@ -1,0 +1,332 @@
+{
+  "majority_class": {
+    "accuracy": 0.8848,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "return_class_recall": 0.0,
+    "return_class_precision": 0.0,
+    "confusion_matrix": {
+      "tn": 1881,
+      "fp": 0,
+      "fn": 245,
+      "tp": 0,
+      "matrix": [
+        [
+          1881,
+          0
+        ],
+        [
+          245,
+          0
+        ]
+      ]
+    },
+    "threshold": 0.5,
+    "roc_auc": 0.5,
+    "pr_auc": 0.1152,
+    "calibration": {
+      "brier_score": 0.102,
+      "log_loss": 0.3573,
+      "mean_predicted_prob": 0.114,
+      "actual_positive_rate": 0.1152,
+      "calibration_gap": 0.0013
+    },
+    "business_metrics": {
+      "total_orders": 2126,
+      "actual_returns": 245,
+      "actual_non_returns": 1881,
+      "base_return_rate": 0.1152,
+      "calls_triggered": 0,
+      "call_rate_pct": 0.0,
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 245,
+      "true_negatives": 1881,
+      "returns_prevented": 0.0,
+      "gross_baseline_cost_inr": 281750.0,
+      "total_call_cost_inr": 0.0,
+      "gross_prevented_savings_inr": 0.0,
+      "net_financial_savings_inr": 0.0,
+      "net_savings_per_order_inr": 0.0,
+      "final_operational_cost_inr": 281750.0,
+      "cost_reduction_pct": 0.0,
+      "cost_per_prevented_return_inr": Infinity
+    }
+  },
+  "rule_based": {
+    "accuracy": 0.6896,
+    "precision": 0.2138,
+    "recall": 0.6327,
+    "f1": 0.3196,
+    "return_class_recall": 0.6327,
+    "return_class_precision": 0.2138,
+    "confusion_matrix": {
+      "tn": 1311,
+      "fp": 570,
+      "fn": 90,
+      "tp": 155,
+      "matrix": [
+        [
+          1311,
+          570
+        ],
+        [
+          90,
+          155
+        ]
+      ]
+    },
+    "threshold": 0.1118,
+    "roc_auc": 0.7225,
+    "pr_auc": 0.2597,
+    "calibration": {
+      "brier_score": 0.0938,
+      "log_loss": 0.3228,
+      "mean_predicted_prob": 0.1122,
+      "actual_positive_rate": 0.1152,
+      "calibration_gap": 0.003
+    },
+    "business_metrics": {
+      "total_orders": 2126,
+      "actual_returns": 245,
+      "actual_non_returns": 1881,
+      "base_return_rate": 0.1152,
+      "calls_triggered": 725,
+      "call_rate_pct": 34.1,
+      "true_positives": 155,
+      "false_positives": 570,
+      "false_negatives": 90,
+      "true_negatives": 1311,
+      "returns_prevented": 54.25,
+      "gross_baseline_cost_inr": 281750.0,
+      "total_call_cost_inr": 32625.0,
+      "gross_prevented_savings_inr": 62387.5,
+      "net_financial_savings_inr": 29762.5,
+      "net_savings_per_order_inr": 14.0,
+      "final_operational_cost_inr": 251987.5,
+      "cost_reduction_pct": 10.56,
+      "cost_per_prevented_return_inr": 601.38
+    }
+  },
+  "logistic_regression_default_thresh": {
+    "accuracy": 0.8956,
+    "precision": 0.7255,
+    "recall": 0.151,
+    "f1": 0.25,
+    "return_class_recall": 0.151,
+    "return_class_precision": 0.7255,
+    "confusion_matrix": {
+      "tn": 1867,
+      "fp": 14,
+      "fn": 208,
+      "tp": 37,
+      "matrix": [
+        [
+          1867,
+          14
+        ],
+        [
+          208,
+          37
+        ]
+      ]
+    },
+    "threshold": 0.5,
+    "roc_auc": 0.7859,
+    "pr_auc": 0.4151,
+    "calibration": {
+      "brier_score": 0.0849,
+      "log_loss": 0.2933,
+      "mean_predicted_prob": 0.1127,
+      "actual_positive_rate": 0.1152,
+      "calibration_gap": 0.0026
+    },
+    "business_metrics": {
+      "total_orders": 2126,
+      "actual_returns": 245,
+      "actual_non_returns": 1881,
+      "base_return_rate": 0.1152,
+      "calls_triggered": 51,
+      "call_rate_pct": 2.4,
+      "true_positives": 37,
+      "false_positives": 14,
+      "false_negatives": 208,
+      "true_negatives": 1867,
+      "returns_prevented": 12.95,
+      "gross_baseline_cost_inr": 281750.0,
+      "total_call_cost_inr": 2295.0,
+      "gross_prevented_savings_inr": 14892.5,
+      "net_financial_savings_inr": 12597.5,
+      "net_savings_per_order_inr": 5.93,
+      "final_operational_cost_inr": 269152.5,
+      "cost_reduction_pct": 4.47,
+      "cost_per_prevented_return_inr": 177.22
+    }
+  },
+  "logistic_regression_economic_thresh": {
+    "accuracy": 0.7253,
+    "precision": 0.2474,
+    "recall": 0.6776,
+    "f1": 0.3624,
+    "return_class_recall": 0.6776,
+    "return_class_precision": 0.2474,
+    "confusion_matrix": {
+      "tn": 1376,
+      "fp": 505,
+      "fn": 79,
+      "tp": 166,
+      "matrix": [
+        [
+          1376,
+          505
+        ],
+        [
+          79,
+          166
+        ]
+      ]
+    },
+    "threshold": 0.1118,
+    "roc_auc": 0.7859,
+    "pr_auc": 0.4151,
+    "calibration": {
+      "brier_score": 0.0849,
+      "log_loss": 0.2933,
+      "mean_predicted_prob": 0.1127,
+      "actual_positive_rate": 0.1152,
+      "calibration_gap": 0.0026
+    },
+    "business_metrics": {
+      "total_orders": 2126,
+      "actual_returns": 245,
+      "actual_non_returns": 1881,
+      "base_return_rate": 0.1152,
+      "calls_triggered": 671,
+      "call_rate_pct": 31.56,
+      "true_positives": 166,
+      "false_positives": 505,
+      "false_negatives": 79,
+      "true_negatives": 1376,
+      "returns_prevented": 58.1,
+      "gross_baseline_cost_inr": 281750.0,
+      "total_call_cost_inr": 30195.0,
+      "gross_prevented_savings_inr": 66815.0,
+      "net_financial_savings_inr": 36620.0,
+      "net_savings_per_order_inr": 17.22,
+      "final_operational_cost_inr": 245130.0,
+      "cost_reduction_pct": 13.0,
+      "cost_per_prevented_return_inr": 519.71
+    }
+  },
+  "xgboost_default_thresh": {
+    "accuracy": 0.8918,
+    "precision": 0.6531,
+    "recall": 0.1306,
+    "f1": 0.2177,
+    "return_class_recall": 0.1306,
+    "return_class_precision": 0.6531,
+    "confusion_matrix": {
+      "tn": 1864,
+      "fp": 17,
+      "fn": 213,
+      "tp": 32,
+      "matrix": [
+        [
+          1864,
+          17
+        ],
+        [
+          213,
+          32
+        ]
+      ]
+    },
+    "threshold": 0.5,
+    "roc_auc": 0.7647,
+    "pr_auc": 0.3757,
+    "calibration": {
+      "brier_score": 0.0877,
+      "log_loss": 0.3036,
+      "mean_predicted_prob": 0.1164,
+      "actual_positive_rate": 0.1152,
+      "calibration_gap": 0.0012
+    },
+    "business_metrics": {
+      "total_orders": 2126,
+      "actual_returns": 245,
+      "actual_non_returns": 1881,
+      "base_return_rate": 0.1152,
+      "calls_triggered": 49,
+      "call_rate_pct": 2.3,
+      "true_positives": 32,
+      "false_positives": 17,
+      "false_negatives": 213,
+      "true_negatives": 1864,
+      "returns_prevented": 11.2,
+      "gross_baseline_cost_inr": 281750.0,
+      "total_call_cost_inr": 2205.0,
+      "gross_prevented_savings_inr": 12880.0,
+      "net_financial_savings_inr": 10675.0,
+      "net_savings_per_order_inr": 5.02,
+      "final_operational_cost_inr": 271075.0,
+      "cost_reduction_pct": 3.79,
+      "cost_per_prevented_return_inr": 196.88
+    }
+  },
+  "xgboost_economic_thresh": {
+    "accuracy": 0.7088,
+    "precision": 0.2366,
+    "recall": 0.6857,
+    "f1": 0.3518,
+    "return_class_recall": 0.6857,
+    "return_class_precision": 0.2366,
+    "confusion_matrix": {
+      "tn": 1339,
+      "fp": 542,
+      "fn": 77,
+      "tp": 168,
+      "matrix": [
+        [
+          1339,
+          542
+        ],
+        [
+          77,
+          168
+        ]
+      ]
+    },
+    "threshold": 0.1118,
+    "roc_auc": 0.7647,
+    "pr_auc": 0.3757,
+    "calibration": {
+      "brier_score": 0.0877,
+      "log_loss": 0.3036,
+      "mean_predicted_prob": 0.1164,
+      "actual_positive_rate": 0.1152,
+      "calibration_gap": 0.0012
+    },
+    "business_metrics": {
+      "total_orders": 2126,
+      "actual_returns": 245,
+      "actual_non_returns": 1881,
+      "base_return_rate": 0.1152,
+      "calls_triggered": 710,
+      "call_rate_pct": 33.4,
+      "true_positives": 168,
+      "false_positives": 542,
+      "false_negatives": 77,
+      "true_negatives": 1339,
+      "returns_prevented": 58.8,
+      "gross_baseline_cost_inr": 281750.0,
+      "total_call_cost_inr": 31950.0,
+      "gross_prevented_savings_inr": 67620.0,
+      "net_financial_savings_inr": 35670.0,
+      "net_savings_per_order_inr": 16.78,
+      "final_operational_cost_inr": 246080.0,
+      "cost_reduction_pct": 12.66,
+      "cost_per_prevented_return_inr": 543.37
+    }
+  }
+}

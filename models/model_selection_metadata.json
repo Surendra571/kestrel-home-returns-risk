@@ -1,0 +1,8 @@
+{
+  "selected_model": "Logistic Regression (L2)",
+  "selection_rationale": "Highest PR-AUC (0.4151), superior calibration (Brier 0.0849), highest net financial savings (INR 36,620.00 / 13.00% reduction), strict temporal stability across Q1 and Q2, zero leaf-split variance, transparent linear interpretability, and ultra-lightweight deployment footprint.",
+  "primary_window": "2026-04-01 to 2026-06-30 (N=2,126)",
+  "economic_threshold": 0.1118,
+  "model_file": "selected_model.joblib",
+  "pipeline_file": "preprocessing_pipeline.joblib"
+}

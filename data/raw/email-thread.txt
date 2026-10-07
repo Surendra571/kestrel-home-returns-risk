@@ -1,0 +1,49 @@
+EMAIL THREAD â€” Kestrel Home â€” Returns risk (Variant A)
+Messages exchanged before this pack was sent. Provided as-is.
+========================================================================
+
+From: Ritu Deshpande, Head of D2C Operations, Kestrel Home
+To: Kabir Nanda, Account Lead (our side)
+Cc: Farhan Sheikh; Meenal Joshi; Tanmay Kulkarni
+Subject: Returns model
+
+Kabir - following our call. Returns are the biggest hole in the P&L this year, each one costs us about Rs 600 by my count. I want a model that flags risky orders before dispatch so we can hold them. 95%+ accuracy, I've told the board. Tanmay will send the data.
+
+------------------------------------------------------------------------
+
+From: Tanmay Kulkarni, Data & IT Admin, Kestrel Home
+To: Kabir Nanda, Account Lead (our side)
+Cc: Ritu Deshpande; Farhan Sheikh; Meenal Joshi
+Subject: Export
+
+Export attached. Past orders with the returned flag, plus the latest ones without it (that file is the snapshot the warehouse sees at dispatch).
+Notes: partner-outlet orders get re-imported from the partner feed so you'll see some orders twice (source column). Order values are as stored - the October festive orders went through the new payment gateway, I haven't checked those. Walk-in orders with no address get the default pincode. The service and pickup columns are pulled from the service system as of export day. Shout if anything looks broken.
+
+------------------------------------------------------------------------
+
+From: Farhan Sheikh, Finance Controller, Kestrel Home
+To: Ritu Deshpande, Head of D2C Operations, Kestrel Home
+Cc: Meenal Joshi; Tanmay Kulkarni; Kabir Nanda
+Subject: Re: Returns model
+
+Ritu, the policy figure for a return is Rs 1,150 all-in, not 600 - that's the one I report. But before we hold anything: a held order is not free either, our numbers show people cancel. I'd like to see what a hold costs us against what it saves. And no model bill that scales per order without someone telling me the number first.
+
+------------------------------------------------------------------------
+
+From: Meenal Joshi, Service Desk Manager, Kestrel Home
+To: Ritu Deshpande, Head of D2C Operations, Kestrel Home
+Cc: Farhan Sheikh; Tanmay Kulkarni; Kabir Nanda
+Subject: Re: Returns model
+
+Small thing from the desk side. Most of the returns we process are Shield customers - returns are free for them so they're relaxed about it. They're also the people who buy three appliances a year from us. If we start holding their orders I will hear about it. Also, the confirmation calls we piloted in spring seemed to work - might be worth a look.
+
+------------------------------------------------------------------------
+
+From: Ritu Deshpande, Head of D2C Operations, Kestrel Home
+To: Kabir Nanda, Account Lead (our side)
+Cc: Farhan Sheikh; Meenal Joshi; Tanmay Kulkarni
+Subject: Re: Returns model
+
+Noted all. Kabir: the ask stands - flag and hold, 95% accuracy. We'll deal with Shield later.
+
+------------------------------------------------------------------------

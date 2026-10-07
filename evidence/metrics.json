@@ -1,0 +1,510 @@
+{
+  "dataset_summary": {
+    "validation_split_date": "2026-04-01",
+    "total_validation_orders": 2126,
+    "actual_returns_count": 245,
+    "actual_kept_count": 1881,
+    "base_return_rate": 0.11523988711194733
+  },
+  "model_metadata": {
+    "model_type": "LogisticRegression (L2, C=0.1, StandardScaler)",
+    "pipeline": "ReturnsFeaturePipeline (77 pre-shipment features)",
+    "selected_operating_threshold": 0.15
+  },
+  "ranking_and_calibration_metrics": {
+    "roc_auc": 0.7859084941791709,
+    "pr_auc": 0.4150645401543583,
+    "brier_score": 0.08488070382557927,
+    "mean_predicted_probability": 0.11266049298355937,
+    "calibration_gap_percentage_points": -0.2579394128387952
+  },
+  "operational_threshold_metrics_t_0_15": {
+    "threshold": 0.15,
+    "confusion_matrix": {
+      "true_negatives": 1554,
+      "false_positives": 327,
+      "false_negatives": 101,
+      "true_positives": 144
+    },
+    "accuracy": 0.7986829727187206,
+    "precision": 0.3057324840764331,
+    "recall": 0.5877551020408164,
+    "return_class_recall": 0.5877551020408164,
+    "return_class_precision": 0.3057324840764331,
+    "f1_score": 0.4022346368715084,
+    "orders_held_count": 471,
+    "orders_held_percentage": 22.154280338664158,
+    "expected_business_cost_inr": 244985.0,
+    "expected_avoided_return_loss_inr": 57960.0,
+    "expected_contact_center_call_cost_inr": 21195.0,
+    "expected_net_savings_inr": 36765.0
+  },
+  "default_threshold_metrics_t_0_50": {
+    "threshold": 0.5,
+    "confusion_matrix": {
+      "true_negatives": 1867,
+      "false_positives": 14,
+      "false_negatives": 208,
+      "true_positives": 37
+    },
+    "accuracy": 0.8955785512699906,
+    "precision": 0.7254901960784313,
+    "recall": 0.1510204081632653,
+    "return_class_recall": 0.1510204081632653,
+    "return_class_precision": 0.7254901960784313,
+    "f1_score": 0.25,
+    "orders_held_count": 51,
+    "orders_held_percentage": 2.398871119473189,
+    "expected_business_cost_inr": 269152.5,
+    "expected_net_savings_inr": 12597.5
+  },
+  "segment_performance": {
+    "by_product_family": {
+      "Air Fryer": {
+        "order_count": 300,
+        "return_count": 32,
+        "return_rate": 0.10666666666666667,
+        "hold_count": 78,
+        "hold_rate": 0.26,
+        "recall": 0.78125,
+        "precision": 0.32051282051282054,
+        "roc_auc": 0.8541277985074627,
+        "pr_auc": 0.5230192806727371
+      },
+      "Ceiling Fan": {
+        "order_count": 320,
+        "return_count": 23,
+        "return_rate": 0.071875,
+        "hold_count": 29,
+        "hold_rate": 0.090625,
+        "recall": 0.34782608695652173,
+        "precision": 0.27586206896551724,
+        "roc_auc": 0.7985653637827551,
+        "pr_auc": 0.3548943593424965
+      },
+      "Induction Cooktop": {
+        "order_count": 284,
+        "return_count": 30,
+        "return_rate": 0.1056338028169014,
+        "hold_count": 37,
+        "hold_rate": 0.13028169014084506,
+        "recall": 0.5,
+        "precision": 0.40540540540540543,
+        "roc_auc": 0.8217847769028871,
+        "pr_auc": 0.5005845449919153
+      },
+      "Mixer Grinder": {
+        "order_count": 301,
+        "return_count": 23,
+        "return_rate": 0.07641196013289037,
+        "hold_count": 28,
+        "hold_rate": 0.09302325581395349,
+        "recall": 0.4782608695652174,
+        "precision": 0.39285714285714285,
+        "roc_auc": 0.7736940882076947,
+        "pr_auc": 0.36260865777632834
+      },
+      "Robot Vacuum": {
+        "order_count": 336,
+        "return_count": 61,
+        "return_rate": 0.18154761904761904,
+        "hold_count": 152,
+        "hold_rate": 0.4523809523809524,
+        "recall": 0.7213114754098361,
+        "precision": 0.2894736842105263,
+        "roc_auc": 0.7143964232488822,
+        "pr_auc": 0.4238018757998712
+      },
+      "Room Heater": {
+        "order_count": 316,
+        "return_count": 42,
+        "return_rate": 0.13291139240506328,
+        "hold_count": 74,
+        "hold_rate": 0.23417721518987342,
+        "recall": 0.5238095238095238,
+        "precision": 0.2972972972972973,
+        "roc_auc": 0.773983315954119,
+        "pr_auc": 0.46397595262025276
+      },
+      "Water Purifier": {
+        "order_count": 269,
+        "return_count": 34,
+        "return_rate": 0.12639405204460966,
+        "hold_count": 73,
+        "hold_rate": 0.27137546468401486,
+        "recall": 0.5588235294117647,
+        "precision": 0.2602739726027397,
+        "roc_auc": 0.7235294117647059,
+        "pr_auc": 0.33269220928361476
+      }
+    },
+    "by_sales_channel": {
+      "app": {
+        "order_count": 706,
+        "return_count": 85,
+        "return_rate": 0.12039660056657224,
+        "hold_count": 142,
+        "hold_rate": 0.20113314447592068,
+        "recall": 0.49411764705882355,
+        "precision": 0.29577464788732394,
+        "roc_auc": 0.7618073316283036,
+        "pr_auc": 0.38411131318672787
+      },
+      "marketplace": {
+        "order_count": 569,
+        "return_count": 73,
+        "return_rate": 0.1282952548330404,
+        "hold_count": 163,
+        "hold_rate": 0.28646748681898065,
+        "recall": 0.6986301369863014,
+        "precision": 0.3128834355828221,
+        "roc_auc": 0.7958738400353513,
+        "pr_auc": 0.41575531775783053
+      },
+      "partner_outlet": {
+        "order_count": 269,
+        "return_count": 26,
+        "return_rate": 0.09665427509293681,
+        "hold_count": 49,
+        "hold_rate": 0.1821561338289963,
+        "recall": 0.5384615384615384,
+        "precision": 0.2857142857142857,
+        "roc_auc": 0.7799936688825578,
+        "pr_auc": 0.4438966093051641
+      },
+      "web": {
+        "order_count": 582,
+        "return_count": 61,
+        "return_rate": 0.10481099656357389,
+        "hold_count": 117,
+        "hold_rate": 0.20103092783505155,
+        "recall": 0.6065573770491803,
+        "precision": 0.3162393162393162,
+        "roc_auc": 0.8069601334130455,
+        "pr_auc": 0.4605333088804306
+      }
+    },
+    "by_payment_mode": {
+      "cod": {
+        "order_count": 655,
+        "return_count": 130,
+        "return_rate": 0.1984732824427481,
+        "hold_count": 286,
+        "hold_rate": 0.4366412213740458,
+        "recall": 0.7384615384615385,
+        "precision": 0.3356643356643357,
+        "roc_auc": 0.7542564102564102,
+        "pr_auc": 0.507099082802679
+      },
+      "emi": {
+        "order_count": 268,
+        "return_count": 30,
+        "return_rate": 0.11194029850746269,
+        "hold_count": 41,
+        "hold_rate": 0.15298507462686567,
+        "recall": 0.4,
+        "precision": 0.2926829268292683,
+        "roc_auc": 0.7746498599439776,
+        "pr_auc": 0.36364863370264533
+      },
+      "prepaid_card": {
+        "order_count": 442,
+        "return_count": 36,
+        "return_rate": 0.08144796380090498,
+        "hold_count": 59,
+        "hold_rate": 0.1334841628959276,
+        "recall": 0.4722222222222222,
+        "precision": 0.288135593220339,
+        "roc_auc": 0.763888888888889,
+        "pr_auc": 0.31782713114891603
+      },
+      "prepaid_upi": {
+        "order_count": 761,
+        "return_count": 49,
+        "return_rate": 0.06438896189224705,
+        "hold_count": 85,
+        "hold_rate": 0.1116951379763469,
+        "recall": 0.3877551020408163,
+        "precision": 0.2235294117647059,
+        "roc_auc": 0.7493980738362762,
+        "pr_auc": 0.2616690468738863
+      }
+    },
+    "by_shield_membership": {
+      "Standard Customer": {
+        "order_count": 1648,
+        "return_count": 147,
+        "return_rate": 0.0891990291262136,
+        "hold_count": 263,
+        "hold_rate": 0.1595873786407767,
+        "recall": 0.46258503401360546,
+        "precision": 0.2585551330798479,
+        "roc_auc": 0.7631782893037296,
+        "pr_auc": 0.34445771736100167
+      },
+      "Shield VIP": {
+        "order_count": 478,
+        "return_count": 98,
+        "return_rate": 0.20502092050209206,
+        "hold_count": 208,
+        "hold_rate": 0.4351464435146444,
+        "recall": 0.7755102040816326,
+        "precision": 0.36538461538461536,
+        "roc_auc": 0.7714017185821698,
+        "pr_auc": 0.5189938903300657
+      }
+    },
+    "by_buyer_experience": {
+      "First-Time Buyer": {
+        "order_count": 650,
+        "return_count": 54,
+        "return_rate": 0.08307692307692308,
+        "hold_count": 108,
+        "hold_rate": 0.16615384615384615,
+        "recall": 0.4444444444444444,
+        "precision": 0.2222222222222222,
+        "roc_auc": 0.7418282376336067,
+        "pr_auc": 0.2630857722941836
+      },
+      "Repeat Buyer": {
+        "order_count": 1476,
+        "return_count": 191,
+        "return_rate": 0.1294037940379404,
+        "hold_count": 363,
+        "hold_rate": 0.2459349593495935,
+        "recall": 0.6282722513089005,
+        "precision": 0.3305785123966942,
+        "roc_auc": 0.796027461446004,
+        "pr_auc": 0.45927676918879856
+      }
+    }
+  },
+  "false_positive_cases": [
+    {
+      "order_id": "KO2609532",
+      "customer_id": "KC102744",
+      "family": "Robot Vacuum",
+      "payment_mode": "cod",
+      "sales_channel": "marketplace",
+      "promised_delivery_days": 5,
+      "discount_pct": 8,
+      "customer_prior_orders": 3,
+      "customer_prior_returns": 2,
+      "predicted_prob": 0.7978977541677169
+    },
+    {
+      "order_id": "KO2609200",
+      "customer_id": "KC108653",
+      "family": "Air Fryer",
+      "payment_mode": "prepaid_upi",
+      "sales_channel": "app",
+      "promised_delivery_days": 7,
+      "discount_pct": 6,
+      "customer_prior_orders": 5,
+      "customer_prior_returns": 4,
+      "predicted_prob": 0.6947850378549052
+    },
+    {
+      "order_id": "KO2609068",
+      "customer_id": "KC108624",
+      "family": "Air Fryer",
+      "payment_mode": "cod",
+      "sales_channel": "app",
+      "promised_delivery_days": 8,
+      "discount_pct": 21,
+      "customer_prior_orders": 0,
+      "customer_prior_returns": 0,
+      "predicted_prob": 0.6625123693621202
+    },
+    {
+      "order_id": "KO2608725",
+      "customer_id": "KC100526",
+      "family": "Water Purifier",
+      "payment_mode": "cod",
+      "sales_channel": "marketplace",
+      "promised_delivery_days": 6,
+      "discount_pct": 5,
+      "customer_prior_orders": 2,
+      "customer_prior_returns": 1,
+      "predicted_prob": 0.6545128128914951
+    },
+    {
+      "order_id": "KO2610373",
+      "customer_id": "KC105471",
+      "family": "Robot Vacuum",
+      "payment_mode": "cod",
+      "sales_channel": "marketplace",
+      "promised_delivery_days": 3,
+      "discount_pct": 16,
+      "customer_prior_orders": 4,
+      "customer_prior_returns": 1,
+      "predicted_prob": 0.6266494968142606
+    }
+  ],
+  "false_negative_cases": [
+    {
+      "order_id": "KO2609858",
+      "customer_id": "KC107504",
+      "family": "Mixer Grinder",
+      "payment_mode": "emi",
+      "sales_channel": "partner_outlet",
+      "promised_delivery_days": 6,
+      "discount_pct": 6,
+      "customer_prior_orders": 0,
+      "customer_prior_returns": 0,
+      "predicted_prob": 0.01521387850474166
+    },
+    {
+      "order_id": "KO2608658",
+      "customer_id": "KC102700",
+      "family": "Ceiling Fan",
+      "payment_mode": "emi",
+      "sales_channel": "web",
+      "promised_delivery_days": 4,
+      "discount_pct": 1,
+      "customer_prior_orders": 0,
+      "customer_prior_returns": 0,
+      "predicted_prob": 0.015344959300970634
+    },
+    {
+      "order_id": "KO2608515",
+      "customer_id": "KC108456",
+      "family": "Room Heater",
+      "payment_mode": "prepaid_upi",
+      "sales_channel": "app",
+      "promised_delivery_days": 4,
+      "discount_pct": 9,
+      "customer_prior_orders": 0,
+      "customer_prior_returns": 0,
+      "predicted_prob": 0.01792433414774893
+    },
+    {
+      "order_id": "KO2608702",
+      "customer_id": "KC106895",
+      "family": "Induction Cooktop",
+      "payment_mode": "prepaid_card",
+      "sales_channel": "app",
+      "promised_delivery_days": 4,
+      "discount_pct": 11,
+      "customer_prior_orders": 2,
+      "customer_prior_returns": 0,
+      "predicted_prob": 0.02235121555661454
+    },
+    {
+      "order_id": "KO2610306",
+      "customer_id": "KC102003",
+      "family": "Mixer Grinder",
+      "payment_mode": "cod",
+      "sales_channel": "web",
+      "promised_delivery_days": 2,
+      "discount_pct": 8,
+      "customer_prior_orders": 1,
+      "customer_prior_returns": 0,
+      "predicted_prob": 0.023632297616378785
+    }
+  ],
+  "top_risk_increasing_features": [
+    {
+      "feature": "promised_delivery_days",
+      "coefficient": 0.4323853788790622,
+      "abs_coefficient": 0.4323853788790622
+    },
+    {
+      "feature": "is_shield_member",
+      "coefficient": 0.3916657731461072,
+      "abs_coefficient": 0.3916657731461072
+    },
+    {
+      "feature": "customer_prior_returns",
+      "coefficient": 0.3568154981536748,
+      "abs_coefficient": 0.3568154981536748
+    },
+    {
+      "feature": "payment_mode_cod",
+      "coefficient": 0.20101932523002464,
+      "abs_coefficient": 0.20101932523002464
+    },
+    {
+      "feature": "is_cod",
+      "coefficient": 0.20101932523002464,
+      "abs_coefficient": 0.20101932523002464
+    },
+    {
+      "feature": "has_prior_returns",
+      "coefficient": 0.19526851531703443,
+      "abs_coefficient": 0.19526851531703443
+    },
+    {
+      "feature": "is_gift_order",
+      "coefficient": 0.179983661946843,
+      "abs_coefficient": 0.179983661946843
+    },
+    {
+      "feature": "smoothed_prior_return_rate",
+      "coefficient": 0.15503418315238568,
+      "abs_coefficient": 0.15503418315238568
+    },
+    {
+      "feature": "list_price_inr",
+      "coefficient": 0.11960357597112051,
+      "abs_coefficient": 0.11960357597112051
+    },
+    {
+      "feature": "order_dayofweek",
+      "coefficient": 0.11158798370919093,
+      "abs_coefficient": 0.11158798370919093
+    }
+  ],
+  "top_risk_reducing_features": [
+    {
+      "feature": "prior_return_rate",
+      "coefficient": -0.19594203353757841,
+      "abs_coefficient": 0.19594203353757841
+    },
+    {
+      "feature": "warranty_months",
+      "coefficient": -0.13230614206120533,
+      "abs_coefficient": 0.13230614206120533
+    },
+    {
+      "feature": "payment_mode_prepaid_upi",
+      "coefficient": -0.12272018288678532,
+      "abs_coefficient": 0.12272018288678532
+    },
+    {
+      "feature": "family_Ceiling Fan",
+      "coefficient": -0.11269960078694494,
+      "abs_coefficient": 0.11269960078694494
+    },
+    {
+      "feature": "is_weekend",
+      "coefficient": -0.11044243399012664,
+      "abs_coefficient": 0.11044243399012664
+    },
+    {
+      "feature": "family_Induction Cooktop",
+      "coefficient": -0.10771699610062659,
+      "abs_coefficient": 0.10771699610062659
+    },
+    {
+      "feature": "state_TN",
+      "coefficient": -0.09866567687395654,
+      "abs_coefficient": 0.09866567687395654
+    },
+    {
+      "feature": "note_mentions_no_call",
+      "coefficient": -0.09361196296917673,
+      "abs_coefficient": 0.09361196296917673
+    },
+    {
+      "feature": "sales_channel_partner_outlet",
+      "coefficient": -0.08358887929291389,
+      "abs_coefficient": 0.08358887929291389
+    },
+    {
+      "feature": "pincode_zone",
+      "coefficient": -0.08101102192863491,
+      "abs_coefficient": 0.08101102192863491
+    }
+  ]
+}

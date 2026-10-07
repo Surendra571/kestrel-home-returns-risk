@@ -1,0 +1,22 @@
+sku,family,model_name,list_price_inr,warranty_months,launch_date
+KH-AF-01,Air Fryer,Kestrel Air Fryer Lite,5199,12,2023-11-04
+KH-AF-02,Air Fryer,Kestrel Air Fryer Pro,6499,12,2023-09-07
+KH-AF-03,Air Fryer,Kestrel Air Fryer Max,8773,12,2024-02-02
+KH-MG-01,Mixer Grinder,Kestrel Mixer Grinder Lite,3199,24,2023-05-27
+KH-MG-02,Mixer Grinder,Kestrel Mixer Grinder Pro,3999,24,2023-09-20
+KH-MG-03,Mixer Grinder,Kestrel Mixer Grinder Max,5398,24,2024-12-09
+KH-WP-01,Water Purifier,Kestrel Water Purifier Lite,11999,12,2024-09-03
+KH-WP-02,Water Purifier,Kestrel Water Purifier Pro,14999,12,2023-11-19
+KH-WP-03,Water Purifier,Kestrel Water Purifier Max,20248,12,2023-10-16
+KH-RV-01,Robot Vacuum,Kestrel Robot Vacuum Lite,17599,12,2024-03-06
+KH-RV-02,Robot Vacuum,Kestrel Robot Vacuum Pro,21999,12,2024-01-27
+KH-RV-03,Robot Vacuum,Kestrel Robot Vacuum Max,29698,12,2023-10-26
+KH-IC-01,Induction Cooktop,Kestrel Induction Cooktop Lite,2399,12,2024-05-16
+KH-IC-02,Induction Cooktop,Kestrel Induction Cooktop Pro,2999,12,2023-11-09
+KH-IC-03,Induction Cooktop,Kestrel Induction Cooktop Max,4048,12,2025-01-28
+KH-CF-01,Ceiling Fan,Kestrel Ceiling Fan Lite,2799,24,2024-09-27
+KH-CF-02,Ceiling Fan,Kestrel Ceiling Fan Pro,3499,24,2023-10-15
+KH-CF-03,Ceiling Fan,Kestrel Ceiling Fan Max,4723,24,2024-10-12
+KH-RH-01,Room Heater,Kestrel Room Heater Lite,1999,12,2023-07-29
+KH-RH-02,Room Heater,Kestrel Room Heater Pro,2499,12,2024-02-21
+KH-RH-03,Room Heater,Kestrel Room Heater Max,3373,12,2024-12-23
